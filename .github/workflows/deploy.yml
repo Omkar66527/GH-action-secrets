@@ -6,7 +6,8 @@ on:
       - dev
       - master        #this is master 
 env : 
-  MONGODB_DB_NAME: gha-demo
+
+   MONGODB_DB_NAME: gha-demo
  
   # PORT: 8080   
 jobs:
@@ -42,4 +43,4 @@ jobs:
       - name: Output information
         run: |        
           echo "MONGODB_USERNAME: ${{ env.MONGODB_USERNAME }}"
-          echo "MONGODB_DB_NAME: $env.MONGODB_DB_NAME"
+          echo "MONGODB_DB_NAME: $MONGODB_DB_NAME"

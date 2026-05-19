@@ -12,6 +12,7 @@ env :
   # PORT: 8080   
 jobs:
   test:
+    environment: testing
     env : 
       # MONGODB_USERNAME : omkarbandgar
       # MONGODB_PASSWORD : rAtuUSe0hcSnNgvq
@@ -19,7 +20,6 @@ jobs:
       MONGODB_PASSWORD : ${{  secrets.MONGODB_PASSWORD }}
       MONGODB_CLUSTER_ADDRESS : cluster0.9ipulaq.mongodb.net
       PORT: 8080
-    environment: testing
     runs-on: ubuntu-latest
     steps:
       - name: Get Code

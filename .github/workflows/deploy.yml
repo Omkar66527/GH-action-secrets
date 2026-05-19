@@ -4,10 +4,10 @@ on:
     branches:
       - main
       - dev
-      - master
+      - master        #this is master 
 env : 
   MONGODB_DB_NAME: gha-demo
-  
+ 
   # PORT: 8080   
 jobs:
   test:
